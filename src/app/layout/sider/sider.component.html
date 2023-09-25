@@ -1,0 +1,17 @@
+<div class="sider">
+ <div class="image">
+  
+ </div>
+ <div class="AccountName">
+  {{data.name}}
+ </div>
+ <div class="menu">
+  <div *NgFor="let menu of data.menus" [routerLink]="menu.route" class="menu-item">
+    {{menu.title}}
+  </div>
+ </div>
+ <div class="friend_link">
+  <div *ngFor="let link of data.friends" ></div>
+ </div>
+
+</div>

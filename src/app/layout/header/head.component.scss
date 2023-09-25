@@ -1,0 +1,11 @@
+.header{
+  display: grid;
+  grid-row-gap: 0.5em;
+
+  .title{
+    font-size: 2em;
+  }
+  .description{
+    font-size: 0.9em;
+  };
+}

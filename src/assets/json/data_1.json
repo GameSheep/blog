@@ -1,0 +1,79 @@
+[{
+    "title":"同步数据库",
+    "description":"数据库更新命令dotnet ef migrations add Added_TodoItem，然后dotnet ef database update",
+    "content":"数据库更新命令dotnet ef migrations add Added_TodoItem，然后dotnet ef database update，需要DbMigrator的appsettings.json里面有相应的配置ConnectionStrings",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"同步C#端接口到angular",
+    "description":"不需要手动创建，只要跑命令就行了，当然也有缺点",
+    "content":"abp generate-proxy -t ng 后台生成前端接口的proxy",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"ABP框架的前端安装时要使用yarn",
+    "description":"npm 无法使用",
+    "content":"yarn没有的话，可以先全局安装npm i yarn",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"框架代码生成器",
+    "description":"ABP Suite，收费功能",
+    "content":"ABP Suite,自动生成代码，后续要在EntityCore去生成Margion后再update数据库 ",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"管道 pipe",
+    "description":"angular 技能",
+    "content":"代码参考：https://angular.cn/api/core/Pipe",
+    "date":"2023-09-25",
+    "tag":"Angular"
+},{
+    "title":"装饰器Directive",
+    "description":" Angular 指令装饰器",
+    "content":"管道用于处理{{}}值的显示，装饰器是可以作用在input等元素上",
+    "date":"2023-09-25",
+    "tag":"Angular"
+},{
+    "title":"css 替换引用插件的样式ng:deep",
+    "description":"有弊端不推荐使用",
+    "content":"ng:deep在最外层，然后页面最高层样式，这样使用才能不会影响到其他页面",
+    "date":"2023-09-25",
+    "tag":"Css"
+},{
+    "title":"Object.assign(a,b)",
+    "description":"Object.assign(a,b)可以将两个类型合并到a",
+    "content":"Object.assign(a,b)可以将两个类型合并到a",
+    "date":"2023-09-25",
+    "tag":"Json"
+},{
+    "title":"window.sessionStorage",
+    "description":"window.sessionStorage可以用来网页传输数据，通过getItem和setItem",
+    "content":"window.sessionStorage可以用来网页传输数据，通过getItem和setItem",
+    "date":"2023-09-25",
+    "tag":"Html"
+},{
+    "title":"abp的abp-modal弹窗问题，",
+    "description":"无法使用nz-select",
+    "content":"修改abp-model为nz-model",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"abp中使用datepicker控件",
+    "description":"this.i18n.setLocale(en_US);",
+    "content":"代码引用this.i18n.setLocale(en_US);可以解决，不知道为什么",
+    "date":"2023-09-25",
+    "tag":"ABP"
+},{
+    "title":"单步执行请求导致属性或运算符自动的逐过程",
+    "description":"visual statudio提示词错误",
+    "content":"通过visual studio的调试选项，勾选掉逐过程执行属性和运算符(仅限托管) ",
+    "date":"2023-09-25",
+    "tag":""
+},{
+    "title":"styles.scss是angular项目里写通用样式的地方",
+    "description":"styles.scss是angular项目里写通用样式的地方",
+    "content":"styles.scss是angular项目里写通用样式的地方，h1，h2，h3都可以预先定义好",
+    "date":"2023-09-25",
+    "tag":"Angular"
+}]

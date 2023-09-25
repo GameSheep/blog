@@ -1,0 +1,24 @@
+<nz-layout>
+  <nz-header>
+    <app-head></app-head>
+  </nz-header>
+  <nz-layout>
+    <nz-sider>Sider</nz-sider>
+    <nz-content>
+      <div class="dlayout">
+        <div class="container">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </nz-content>
+  </nz-layout>
+  
+  <nz-back-top nzVisibilityHeight="500" [nzTemplate]="backTop">
+    <ng-template #backTop>
+      <div class="back">
+        <span nz-icon nzType="arrow-up" nzTheme="outline"></span>
+      </div>
+    </ng-template>
+  </nz-back-top>
+  <nz-footer>Footer</nz-footer>
+</nz-layout>
