@@ -1,41 +1,35 @@
-.layout {
-  max-width: 100em;
-  min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2.5em;
-  padding-bottom: 5em;
-  position: relative;
+:host {
+  text-align: center;
+}
 
-  .container {
-    width: 100%;
-    height: 100%;
-    max-width: 100em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3.75em;
-    padding-right: 3.75em;
-  }
+nz-header,
+nz-footer {
+  background: #7dbcea;
+  color: #fff;
 }
-.back{
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  box-shadow: rgba(5, 5, 44, 0.2) 0px 2px 6px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  
-  ::ng-deep {
-    svg{
-      width: 20px !important;
-      height: 28px !important;
-    }
-  }
+
+nz-footer {
+  line-height: 1.5;
 }
-.back:hover {
-  box-shadow: 0 4px 20px rgba(5, 5, 44, 0.2);
+
+nz-sider {
+  background: #3ba0e9;
+  color: #fff;
+  line-height: 120px;
 }
-.back:active {
-  box-shadow: 0 0 0 1px #e8ebf0;
+
+nz-content {
+  background: rgba(16, 142, 233, 1);
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
+nz-layout nz-layout,
+nz-layout:last-child {
+  margin: 0;
 }

@@ -1,5 +1,6 @@
 <div class="page_list">
-  <nz-list class="demo-loadmore-list" [nzLoading]="initLoading">
+  <div>sss</div>
+  <nz-list class="demo_loadmore_list" [nzLoading]="initLoading">
     <nz-list-item *ngFor="let item of data">
       <ng-container *ngIf="!item.loading">
         <nz-list-item-meta
@@ -21,8 +22,8 @@
         [nzLoading]="true"
       ></nz-skeleton>
     </nz-list-item>
-    <div class="loadmore" nz-list-load-more>
+    <!-- <div class="loadmore" nz-list-load-more>
       <button nz-button *ngIf="!loadingMore" (click)="onLoadMore()">loading more</button>
-    </div>
+    </div> -->
   </nz-list>
 </div>

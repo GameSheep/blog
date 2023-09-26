@@ -30,6 +30,7 @@ import { PageListComponent } from './list/list.component';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
+import { PageRoutingModule } from './pages-routing.module';
 
 @NgModule({
   imports: [
@@ -62,7 +63,8 @@ import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
     RouterModule,
     NzListModule,
     NzMessageModule,
-    NzSkeletonModule
+    NzSkeletonModule,
+    PageRoutingModule
   ],
   declarations: [
     PageListComponent
