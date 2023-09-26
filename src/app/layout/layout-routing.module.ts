@@ -4,14 +4,18 @@ import { LayoutComponent } from './layout.component';
 import { PageListComponent } from '../pages/list/list.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'blog', pathMatch: 'full' },
   {
     path: '',
     component: LayoutComponent,
-    children: [
-    { path: 'home', component: PageListComponent },
-    ],
-  },
+    children:[
+      {
+      path:'blog',
+      loadChildren: () =>
+      import('../pages/pages.module').then((m) => m.PagesModule),
+      }
+    ] 
+  }
 ];
 
 @NgModule({

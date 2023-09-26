@@ -31,6 +31,7 @@ import { HeadComponent } from './header/head.component';
 import { FooterComponent } from './footer/footer.component';
 import { SiderComponent } from './sider/sider.component';
 import { LayoutRoutingModule } from './layout-routing.module';
+import { PagesModule } from '../pages/pages.module';
 @NgModule({
   imports: [
     FormsModule,
@@ -60,7 +61,8 @@ import { LayoutRoutingModule } from './layout-routing.module';
     NzEmptyModule,
     NzPopoverModule,
     RouterModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    PagesModule
   ],
   declarations: [
     LayoutComponent,
