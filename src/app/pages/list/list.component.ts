@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { NzMessageService } from 'ng-zorro-antd/message';
 
-
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -16,7 +15,7 @@ export class PageListComponent {
   constructor(private http: HttpClient, private msg: NzMessageService) {}
 
   async ngOnInit(): Promise<void> {
-    const urls = ['assets/data/data-1.json'];
+    const urls = ['assets/json/data_1.json'];
     const fetchJSON = async (url: RequestInfo | URL) => {
       const response = await fetch(url);
       const data = await response.json();
@@ -25,7 +24,8 @@ export class PageListComponent {
     try {
       const responses = await Promise.all(urls.map(fetchJSON));
       responses.forEach((data) => {
-        this.data.push(data);
+        console.log(data);
+        this.data= data;
       });
       console.log(this.data);
     } catch (error) {

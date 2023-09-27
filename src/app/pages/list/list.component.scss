@@ -1,9 +1,16 @@
 .page_list{
   background-color: aliceblue;
   min-height: 300px;
-  color: black;
+  color:var(--primary-02,black) ;
+  margin: 0px 20%;
+  line-height: 32px;
+  border-radius: 8px;
   .demo_loadmore_list {
     min-height: 350px;
+    display: grid;
+    grid-row-gap: 1em;
+    border-radius: 8px;
+    padding: 16px;
   }
   .loadmore {
     text-align: center;
@@ -11,5 +18,19 @@
     height: 32px;
     line-height: 32px;
   }
-
+  .card{
+    background: var(--ui-01,white) ;
+    border-radius: 8px;
+    overflow: hidden;
+    .label{
+      text-align: left;
+      padding-left: 8px;
+    }
+    .title{
+      background:var(--primary,rgb(234, 248, 234)) ;
+    }
+    .description{
+      background: var(--neutral-01,rgb(234, 248, 234));
+    }
+  }
 }

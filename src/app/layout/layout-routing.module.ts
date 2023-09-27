@@ -4,13 +4,13 @@ import { LayoutComponent } from './layout.component';
 import { PageListComponent } from '../pages/list/list.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'blog', pathMatch: 'full' },
+  { path: '', redirectTo: 'knowledge', pathMatch: 'full' },
   {
     path: '',
     component: LayoutComponent,
     children:[
       {
-      path:'blog',
+      path:'knowledge',
       loadChildren: () =>
       import('../pages/pages.module').then((m) => m.PagesModule),
       }
