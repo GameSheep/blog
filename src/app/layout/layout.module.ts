@@ -32,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SiderComponent } from './sider/sider.component';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { PagesModule } from '../pages/pages.module';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 @NgModule({
   imports: [
     FormsModule,
@@ -62,7 +63,8 @@ import { PagesModule } from '../pages/pages.module';
     NzPopoverModule,
     RouterModule,
     LayoutRoutingModule,
-    PagesModule
+    PagesModule,
+    NzIconModule
   ],
   declarations: [
     LayoutComponent,
@@ -71,6 +73,11 @@ import { PagesModule } from '../pages/pages.module';
     FooterComponent
   ],
   providers: [],
-  exports: [],
+  exports: [
+    LayoutComponent,
+    HeadComponent,
+    SiderComponent,
+    FooterComponent
+  ],
 })
 export class WebModule { }

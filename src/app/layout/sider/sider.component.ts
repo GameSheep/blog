@@ -28,12 +28,12 @@ export class SiderComponent {
       {
         title:'github',
         icon:'github',
-        url:''
+        url:'https://github.com/GameSheep'  
       },
       {
         title:'QQ',
         icon:'qq',
-        url:''
+        url:'https://www.baidu.com'
       }
     ]
   }

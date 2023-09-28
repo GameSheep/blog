@@ -1,17 +1,27 @@
 <div class="sider">
  <div class="image">
-  
+  <img
+      nz-image
+      width="200px"
+      height="200px"
+      src="./assets/images/春江潮水.png"
+      alt=""
+    />
  </div>
- <div class="AccountName">
+ <div class="account_name">
   {{data.name}}
  </div>
  <div class="menu">
-  <div *NgFor="let menu of data.menus" [routerLink]="menu.route" class="menu-item">
+  <div *ngFor="let menu of data.menus" [routerLink]="menu.route" class="menu-item">
     {{menu.title}}
   </div>
  </div>
  <div class="friend_link">
-  <div *ngFor="let link of data.friends" ></div>
+  <div *ngFor="let link of data.friends" >
+    <a [href]="link.url">
+      <span nz-icon [nzType]="link.icon"  nzTheme="outline"></span>
+    </a>
+  </div>
  </div>
 
 </div>

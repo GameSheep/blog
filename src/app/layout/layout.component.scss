@@ -5,7 +5,6 @@
 nz-header,
 nz-footer {
   background: #7dbcea;
-  color: #fff;
 }
 
 nz-footer {
@@ -14,15 +13,15 @@ nz-footer {
 
 nz-sider {
   background: #3ba0e9;
-  color: #fff;
-  line-height: 120px;
+  color: red;
+  line-height: 8em;
 }
 
 nz-content {
-  background: rgba(16, 142, 233, 1);
-  color: #fff;
-  min-height: 120px;
-  line-height: 120px;
+  background: rgb(184 218 243);
+  min-height: 8em;
+  line-height: 8em;
+  width: 100%;
 }
 
 nz-layout {
@@ -32,4 +31,19 @@ nz-layout {
 nz-layout nz-layout,
 nz-layout:last-child {
   margin: 0;
+}
+.content{
+  display: flex;
+  padding: 1em 10em;
+  border-radius: 0.5em;
+  gap: 1em;
+}
+.sider{
+  width: 20%;
+  background-color: cornsilk;
+  border-radius: 0.5em;
+}
+.ant-layout-content{
+  width: 80%;
+  border-radius: 0.5em;
 }
